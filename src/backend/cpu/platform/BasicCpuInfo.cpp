@@ -81,7 +81,7 @@ static inline void cpuid(uint32_t level, int32_t output[4])
 #   ifdef _MSC_VER
     __cpuid(output, static_cast<int>(level));
 #   else
-    __cpuid_count(level, 0, output[0], output[1], output[2], output[3]);
+    
 #   endif
 }
 
