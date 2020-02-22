@@ -61,11 +61,6 @@ static __inline__ void __attribute__((__always_inline__)) _mm_free(void *__p)
 {
     free(__p);
 }
-#elif defined(_WIN32) && !defined(__GNUC__)
-#   include <malloc.h>
-#else
-#   include <mm_malloc.h>
-#endif
 
 
 #endif /* XMRIG_MM_MALLOC_PORTABLE_H */
