@@ -30,7 +30,6 @@
 #ifdef _MSC_VER
 #   include <intrin.h>
 #else
-#   include <cpuid.h>
 #endif
 
 #ifndef bit_AES
