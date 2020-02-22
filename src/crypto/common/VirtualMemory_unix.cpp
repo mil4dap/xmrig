@@ -30,7 +30,10 @@
 
 
 #include "backend/cpu/Cpu.h"
-#include "crypto/common/portable/mm_malloc.h"
+#include <stdlib.h> // malloc, free
+#ifdef _WIN32
+#include <malloc.h>
+#endif
 #include "crypto/common/VirtualMemory.h"
 
 
